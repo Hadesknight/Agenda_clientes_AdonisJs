@@ -11,6 +11,7 @@ class ClientController {
 
   async store({ request, response }) {
     const data = request.all()
+    console.log(data)
     try {
       const client = await Clients.create(data)
 

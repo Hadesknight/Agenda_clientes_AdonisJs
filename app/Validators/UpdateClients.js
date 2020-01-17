@@ -7,8 +7,7 @@ class UpdateClients {
 
   get rules() {
     return {
-      email: 'email | unique:clients,email',
-      cpf: 'unique:clients,cpf'
+      email: 'email'
     }
   }
 
