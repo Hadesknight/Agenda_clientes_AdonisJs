@@ -25,20 +25,6 @@ class ExceptionHandler extends BaseExceptionHandler {
       return response.status(error.status).send(error.messages)
     }
   }
-
-  /**
-   * Report exception for logging or debugging.
-   *
-   * @method report
-   *
-   * @param  {Object} error
-   * @param  {Object} options.request
-   *
-   * @return {void}
-   */
-  async report(error, { request }) {
-    console.log(error)
-  }
 }
 
 module.exports = ExceptionHandler
